@@ -1,0 +1,24 @@
+{
+  "name": "belajar-docker",
+  "version": "1.0.0",
+  "description": "This is my project while learning about Docker.\\n\r Here I made my very first Docker image that can succesfully run when I created the container which has my apllication in its image.",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkyacahyani/belajar-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizkyacahyani/belajar-docker/issues"
+  },
+  "homepage": "https://github.com/rizkyacahyani/belajar-docker#readme"
+}

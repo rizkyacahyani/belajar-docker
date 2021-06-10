@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - 6379:6379
+    networks:
+      - node_network
+  app-node-env:
+    container_name: app-env
+    image: app-node-env:1.0
+    ports:
+      - 3001:3001
+    depends_on:
+      - redis
+    environment:
+      - NAME=Rizkyacahyani
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    networks:
+      - node_network
+
+networks:
+  node_network:
+    name: node_network
